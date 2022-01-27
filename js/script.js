@@ -5,8 +5,10 @@
 // - Удалить рекламу со страницы - Спросить у пользователя отношение к технике apple и записать ответ в блок на странице с id "prompt"
 let menu = document.getElementsByClassName('menu') [0] ,
     menuItem = document.getElementsByClassName('menu-item'),
-    tit = document.getElementById ("title");
+    tit = document.getElementById ("title"),
+    adv = document.getElementsByClassName('adv') [0];
 
 menu.insertBefore(menuItem[2], menuItem[1]);
 document.body.style.background = "url('img/apple_true.jpg')";
 title.textContent = 'Мы продаем только подлинную технику Apple';
+adv.remove();
